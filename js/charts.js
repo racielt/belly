@@ -94,3 +94,5 @@ function buildCharts(sample) {
     Plotly.newPlot("bar", barData, barLayout);
   });
 }
+
+init();
