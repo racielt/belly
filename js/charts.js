@@ -119,6 +119,12 @@ function buildCharts(sample) {
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
 
+    
+    
+    var metadata = data.metadata;
+    var filters = metadata.filter((sampleObj) => sampleObj.id == sample);
+    var results = filters[0];
+    
     // 3. Create a variable that holds the washing frequency.
     var washFrequency = results.wfreq;
     
