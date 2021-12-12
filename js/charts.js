@@ -129,7 +129,7 @@ function buildCharts(sample) {
     var washFrequency = results.wfreq;
     
     // 4. Create the trace for the gauge chart.
-    var gaugeData = 
+    var gaugeData = [
       {
       value: parseFloat(wasshFrequency),
       type: "indicator",
@@ -145,7 +145,8 @@ function buildCharts(sample) {
           { range: [8, 10], color: "green" },
         ],
       },
-    };
+    },
+  ];   
     
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
