@@ -97,8 +97,8 @@ function buildCharts(sample) {
     var bubbleData = [
     {
       x: otu_ids,
-      y: sample_values,
-      text: otu_labels,
+      y: sample_values.slice(0,10).reverse(),
+      text: otu_labels.slice(0,10).reverse(),
       mode: "markers",
       marker: {
         size: sample_values,
