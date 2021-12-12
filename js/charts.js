@@ -133,7 +133,7 @@ function buildCharts(sample) {
       {
       value: parseFloat(washFrequency),
       type: "indicator",
-      mode: "gauge+number+delta",
+      mode: "gauge+number",
       gauge: {
         axis: { range: [0, 10], tickwidth: 2, tickcolor: "darkblue" },
         bar: { color: "gray" },
