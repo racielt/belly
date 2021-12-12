@@ -131,9 +131,9 @@ function buildCharts(sample) {
     // 4. Create the trace for the gauge chart.
     var gaugeData = [
       {
-      value: parseFloat(wasshFrequency),
+      value: parseFloat(washFrequency),
       type: "indicator",
-      mode: "gauge+number",
+      mode: "gauge+number+delta",
       gauge: {
         axis: { range: [0, 10], tickwidth: 2, tickcolor: "darkblue" },
         bar: { color: "gray" },
