@@ -97,8 +97,8 @@ function buildCharts(sample) {
     var bubbleData = [
     {
       x: otu_ids,
-      y: sample_values.slice(0,10).reverse(),
-      text: otu_labels.slice(0,10).reverse(),
+      y: sample_values,
+      text: otu_labels,
       mode: "markers",
       marker: {
         size: sample_values,
@@ -112,7 +112,7 @@ function buildCharts(sample) {
     var bubbleLayout = {
       title: "Bacteria Cultures Per Sample",
       xaxis:{ title: "OTU ID"},
-      margin: {t: 40 },
+      margin: {t: 30 },
       hovermode: "closest"
     };
 
